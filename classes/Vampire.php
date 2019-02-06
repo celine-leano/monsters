@@ -6,7 +6,7 @@
  * Time: 11:15 AM
  */
 
-class Vampire
+class Vampire extends monster
 {
     private $_victims;
 
