@@ -6,7 +6,7 @@
  * Time: 11:15 AM
  */
 
-class Vampire extends monster
+class Vampire extends Monster
 {
     private $_victims;
 
@@ -18,8 +18,8 @@ class Vampire extends monster
 
     function attack()
     {
-        echo "Your vampire attacks a victim";
         $this->_victims++;
+        echo "Your vampire attacks a victim";
     }
 
     function getVictims()
