@@ -23,6 +23,11 @@ $f3->route('GET /', function() {
     $vampire->attack();
     echo "<p>" . $vampire->getVictims() . "</p>";
 
+    $banshee = new Banshee("Maria");
+    $banshee->shriek();
+    $banshee->setPitch("low");
+    $banshee->attack();
+
     $view = new View();
     echo $view->render("views/home.html");
 });

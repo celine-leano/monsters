@@ -6,7 +6,7 @@
  * Time: 11:35 AM
  */
 
-class Banshee
+class Banshee extends Monster
 {
     private $_pitch;
 
@@ -18,12 +18,12 @@ class Banshee
 
     function shriek()
     {
-        echo $this->_name . "shrieks at a " . $this->_pitch . " pitch.";
+        echo $this->getName() . " shrieks at a " . $this->_pitch . " pitch.";
     }
 
     function attack()
     {
-        return shriek();
+        return $this->shriek();
     }
 
     function setPitch($pitch)
